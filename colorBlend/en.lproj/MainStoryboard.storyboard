@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="14A314h" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kQq-vv-Cez"/>
+                        <viewControllerLayoutGuide type="bottom" id="IIS-BC-wyC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pt7-Cy-xdQ">
+                                <rect key="frame" x="0.0" y="273" width="320" height="295"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="295" id="8xz-bL-WNg"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tt4-5P-Gkj">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="254"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="254" id="0TO-uA-Mcr"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Original Image" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tub-oE-G3L">
+                                <rect key="frame" x="0.0" y="106" width="320" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="PKx-96-Cx3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.45098042490000001" green="0.67450982329999998" blue="0.92549026010000002" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Blend Mode Image" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KIu-PQ-5aY">
+                                <rect key="frame" x="0.0" y="400" width="320" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="uIH-jo-f37"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="0.45098042490000001" green="0.67450982329999998" blue="0.92549026010000002" alpha="1" colorSpace="deviceRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Tt4-5P-Gkj" firstAttribute="top" secondItem="3" secondAttribute="top" id="2MF-tm-erh"/>
+                            <constraint firstItem="pt7-Cy-xdQ" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" id="2ia-aF-T36"/>
+                            <constraint firstItem="KIu-PQ-5aY" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" id="4sm-gK-Mz6"/>
+                            <constraint firstItem="Tub-oE-G3L" firstAttribute="centerY" secondItem="Tt4-5P-Gkj" secondAttribute="centerY" id="9cB-Xf-fQC"/>
+                            <constraint firstItem="Tt4-5P-Gkj" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" id="9lk-Zp-XrD"/>
+                            <constraint firstItem="Tt4-5P-Gkj" firstAttribute="leading" secondItem="3" secondAttribute="leading" id="Gzd-G7-JhM"/>
+                            <constraint firstItem="pt7-Cy-xdQ" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" id="I96-Xl-XsI"/>
+                            <constraint firstAttribute="bottom" secondItem="KIu-PQ-5aY" secondAttribute="bottom" constant="126" id="QGv-vh-WcM"/>
+                            <constraint firstItem="KIu-PQ-5aY" firstAttribute="leading" secondItem="3" secondAttribute="leading" id="ZeW-TZ-F2F"/>
+                            <constraint firstItem="Tub-oE-G3L" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" id="bI8-TP-Qt2"/>
+                            <constraint firstItem="pt7-Cy-xdQ" firstAttribute="leading" secondItem="3" secondAttribute="leading" id="f8z-MB-kuh"/>
+                            <constraint firstItem="Tub-oE-G3L" firstAttribute="leading" secondItem="3" secondAttribute="leading" id="iOj-UK-W8L"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgShow" destination="pt7-Cy-xdQ" id="TVJ-Ww-VI1"/>
+                        <outlet property="imgShowOld" destination="Tt4-5P-Gkj" id="Ied-Hl-YTS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
